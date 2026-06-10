@@ -1,6 +1,15 @@
 ### A Pluto.jl notebook ###
 # v0.20.27
 
+#> [frontmatter]
+#> chapter = 4
+#> section = 23
+#> order = 23
+#> image = "https://raw.githubusercontent.com/fonsp/Pluto.jl/580ab811f13d565cc81ebfa70ed36c84b125f55d/demo/plutodemo.gif"
+#> title = "23 Data Analysis Notebook"
+#> tags = ["module4", "track_julia", "track_material", "Pluto", "PlutoUI"]
+#> layout = "layout.jlhtml"
+
 using Markdown
 using InteractiveUtils
 
