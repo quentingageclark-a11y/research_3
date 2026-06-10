@@ -3,10 +3,10 @@
 
 #> [frontmatter]
 #> chapter = 4
-#> section = 7
-#> order = 7
+#> section = 8
+#> order = 8
 #> image = "https://raw.githubusercontent.com/fonsp/Pluto.jl/580ab811f13d565cc81ebfa70ed36c84b125f55d/demo/plutodemo.gif"
-#> title = "7 Data Analysis Notebook"
+#> title = "8 Data Analysis Notebook"
 #> tags = ["module4", "track_julia", "track_material", "Pluto", "PlutoUI"]
 #> layout = "layout.jlhtml"
 
