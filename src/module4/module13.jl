@@ -6,7 +6,7 @@
 #> section = 14
 #> order = 14
 #> image = "https://raw.githubusercontent.com/fonsp/Pluto.jl/580ab811f13d565cc81ebfa70ed36c84b125f55d/demo/plutodemo.gif"
-#> title = "14 Data Analysis Notebook"
+#> title = "Inverse Interpolation"
 #> tags = ["module4", "track_julia", "track_material", "Pluto", "PlutoUI"]
 #> layout = "layout.jlhtml"
 

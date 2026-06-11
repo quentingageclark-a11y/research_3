@@ -6,7 +6,7 @@
 #> section = 12
 #> order = 12
 #> image = "https://raw.githubusercontent.com/fonsp/Pluto.jl/580ab811f13d565cc81ebfa70ed36c84b125f55d/demo/plutodemo.gif"
-#> title = "12 Data Analysis Notebook"
+#> title = "Fundamentals of linear estimation"
 #> tags = ["module4", "track_julia", "track_material", "Pluto", "PlutoUI"]
 #> layout = "layout.jlhtml"
 

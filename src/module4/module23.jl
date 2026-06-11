@@ -6,7 +6,7 @@
 #> section = 24
 #> order = 24
 #> image = "https://raw.githubusercontent.com/fonsp/Pluto.jl/580ab811f13d565cc81ebfa70ed36c84b125f55d/demo/plutodemo.gif"
-#> title = "24 Data Analysis Notebook"
+#> title = "Regularized Nonstationary Regression"
 #> tags = ["module4", "track_julia", "track_material", "Pluto", "PlutoUI"]
 #> layout = "layout.jlhtml"
 
