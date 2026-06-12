@@ -10,5 +10,5 @@ taking the first steps in the data analysis journey.",
     ],
     "institution" => "Your university (or similar) name",
     "institution_logo" => "name of your institution logo file, e.g. `logo.svg`. Place this under `assets`",
-    "repo" => "link to the repository of the source code"
+    "repo" => "https://github.com/quentingageclark-a11y/research_3/blob/main/src/module4/01-Introduction.jl"
 )
