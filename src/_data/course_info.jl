@@ -1,6 +1,7 @@
 Dict(
-    "course_name" => "Name of your course",
-    "course_subtitle" => "a short catchy phrase about your course",
+    "course_name" => "Computational Data Analysis",
+    "course_subtitle" => "This course discusses the tools needed for
+taking the first steps in the data analysis journey.",
     "code" => "code of your course",
     "semester" => "Fall 20XX",
     "authors" => [
