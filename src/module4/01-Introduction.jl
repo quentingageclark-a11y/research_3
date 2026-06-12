@@ -1,6 +1,15 @@
 ### A Pluto.jl notebook ###
 # v0.20.21
 
+#> [frontmatter]
+#> chapter = 4
+#> section = 0
+#> order = 0
+#> image = "https://github.com/quentingageclark-a11y/research_3/blob/main/src/assets/imagesandgifs/julia00im.png?raw=true"
+#> title = "Introduction?"
+#> tags = ["module4", "track_julia", "track_material", "Pluto", "PlutoUI"]
+#> layout = "layout.jlhtml"
+
 using Markdown
 using InteractiveUtils
 
