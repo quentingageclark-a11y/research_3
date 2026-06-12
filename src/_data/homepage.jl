@@ -16,7 +16,7 @@ Dict(
              "text" => md"""
              We have a collection of lots of data over time and space. With the help of signal analysis, we can work to clean this data and extract meaningful information and patterns from background noise.
              """,
-             "img" => "https://user-images.githubusercontent.com/6933510/136196607-16207911-53be-4abb-b90e-d46c946e6aaf.gif"
+             "img" => "https://github.com/quentingageclark-a11y/plutoimages/blob/main/aedrian-salazar-e1e2JiEAd70-unsplash.jpg?raw=true"
              ),
         Dict("name" => "Numerical Analysis- breaking down reality into data points; what are the gaps?",
              "text" => md"""
