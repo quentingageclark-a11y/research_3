@@ -1,34 +1,27 @@
 Dict(
-    "title" => @htl("Computational thinking <strong>website template</strong>"),
+    "title" => @htl("Computational Data Analysis <strong>class website</strong>"),
 
     # # add a disclaimer to the course webpage. Remove it if you dont want to include it.
     "disclaimer" => md"""
-    This template will allow you to build a website like the **Computational thinking with Julia** class tought at MIT.
-    Use it to harness the power of Julia and Pluto in your own teaching and enhance students learning experience.
+    This website is designed to provide a comprehensive introduction to computational data analysis using the Julia programming language and the Pluto.jl interactive environment. If you are in the class, or simply want to learn a thing or two, feel free to look around!
     """,
 
     # Highlights the key features of your class to make it more engaging. Remove it if you dont want to include it.
     "highlights" => [
-        Dict("name" => "Easy to customise", 
-             "text" => md"Let the template automate all of the website development and infrastructure, so that you can focus on the most important thing:
-             **easily develop your lesson materials!**",
-             "img" => "https://user-images.githubusercontent.com/6933510/168320383-a401459b-97f5-41df-bc7b-ebe76e4886cc.png"
+        Dict("name" => "Fundamental Characteristics of Data", 
+             "text" => md"This explains how to describe, clean, and organize a collection of numbers. Representing data in a meaningful way is the first step in any data analysis project.",
+             "img" => "https://github.com/quentingageclark-a11y/plutoimages/blob/main/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg?raw=true"
         ),
-        Dict("name" => "Revolutionary interactivity with Pluto.jl",
+        Dict("name" => "Signal Analysis",
              "text" => md"""
-             Thanks to Pluto.jl, the website is built using real code, and instead of a book, we have a series of interactive notebooks.
-             **On the website, students can play with sliders, buttons and images to interact with our simulations.**
-             You can even go further, and modify and run any code on our website!
+             We have a collection of lots of data over time and space. With the help of signal analysis, we can work to clean this data and extract meaningful information and patterns from background noise.
              """,
              "img" => "https://user-images.githubusercontent.com/6933510/136196607-16207911-53be-4abb-b90e-d46c946e6aaf.gif"
              ),
-        Dict("name" => "Learn Julia",
+        Dict("name" => "Numerical Analysis- breaking down reality into data points; what are the gaps?",
              "text" => md"""
-             In literature it's not enough to just know the technicalities of grammar.
-             In music it's not enough to learn the scales. The goal is to communicate experiences and emotions.
-             For a computer scientist, it's not enough to write a working program,
-             the program should be written with beautiful high level abstractions that speak to your audience.
-             **Julia is designed with this purpose in mind, use it in your teaching to harness its power.**
+             Numerical analysis is the study of algorithms for the problems of continuous mathematics (as distinguished from discrete mathematics).
+             It is a branch of mathematics that deals with the development and analysis of numerical methods for solving mathematical problems.
              """,
              "img" => "https://user-images.githubusercontent.com/6933510/136203632-29ce0a96-5a34-46ad-a996-de55b3bcd380.png"
         )
