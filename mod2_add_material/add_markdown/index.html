@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en">
+<head>
+
+<title>Add markdown files — Computational Data Analysis </title>
+
+
+<link rel="root" href="../.." />
+
+<link rel="icon" href="../../assets/favicon.ico" />
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+<link rel="stylesheet" href="../../assets/styles/index.css" type="text/css" />
+<link rel="stylesheet" href="../../assets/styles/layout.css" type="text/css" />
+<script src="../../assets/scripts/sidebar.js" type="module"></script>
+
+<link rel="pp-search-data" href="../../pp_search_data.json" />
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous" defer></script>
+<script src="../../assets/scripts/search.js" type="module" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.0/src/lite-yt-embed.js" integrity="sha256-sDRYYtDc+jNi2rrJPUS5kGxXXMlmnOSCq5ek5tYAk/M=" crossorigin="anonymous" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.0/src/lite-yt-embed.css" integrity="sha256-lv6SEl7Dhri7d86yiHCTuSWFb9CYROQFewxZ7Je0n5k=" crossorigin="anonymous">
+
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8572a580bead4b729ad55779ba3a1cd6"}'></script>
+
+<script data-goatcounter="https://computationalthinking-stats.plutojl.org/count" async src="//computationalthinking-stats.plutojl.org/count.js"></script>
+
+<script type="importmap">{"imports":{"9IVCm":"./firebase-firestore.97b3e0f3.js","g8zEq":"./firebase-app.513de744.js"}}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/editor.f27d730b.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/editor.4403bf6d.css"><script type="module" src="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/frontend.16ec773c.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+
+    
+<meta name="pluto-insertion-spot-meta">
+
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2a2928">
+    <meta name="color-scheme" content="light dark">
+
+    
+    
+    
+    <link rel="pluto-external-source" id="pluto-logo-big" href="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/logo.103597bc.svg">
+    <link rel="pluto-external-source" id="pluto-logo-small" href="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/favicon_unsaturated.9ed3a6f6.svg">
+
+    <script defer="">console.log("Pluto.jl, by Fons van der Plas (https://github.com/fonsp), Mikołaj Bochenski (https://github.com/malyvsen), Michiel Dral (https://github.com/dralletje) and friends 🌈");</script>
+
+    <script src="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/editor.ed1b15a7.js" defer=""></script>
+
+    <!-- This doesn't do anything unless activated, and it makes sure parcel bundles this -->
+    <script id="iframe-resizer-content-window-script" src="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/editor.2ba45c45.js" crossorigin="anonymous" defer=""></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/editor.409716be.css" type="text/css">
+
+    <meta rel="pluto-cdn-root" href="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/">
+    <script data-pluto-file="launch-parameters">
+window.pluto_notebook_id = undefined;
+window.pluto_isolated_cell_ids = undefined;
+window.pluto_notebookfile = undefined;
+window.pluto_disable_ui = true;
+window.pluto_slider_server_url = undefined;
+window.pluto_binder_url = "https://mybinder.org/v2/gh/fonsp/pluto-on-binder/v0.20.24";
+window.pluto_statefile = undefined;
+window.pluto_preamble_html = undefined;
+window.pluto_recording_url = undefined;
+window.pluto_recording_audio_url = undefined;
+</script>
+
+<meta name="pluto-insertion-spot-parameters">
+
+    <script src="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/editor.7ab89870.js" type="module" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/frontend.ae6e0116.js"></script>
+
+    <!-- This script will be enabled by JS after the notebook has initialized to prevent taking up bandwidth during the initial load. -->
+    <link rel="pluto-external-source" id="MathJax-script" href="https://cdn.jsdelivr.net/gh/JuliaPluto/Pluto.jl@0.20.24/frontend-dist/tex-svg-full.6762fe7d.js" type="text/javascript">
+    
+    
+<meta name="pluto-insertion-spot-preload">
+
+
+
+</head>
+<body>
+    <div id="pages-layout">
+        <button id="toggle-nav" title="Open navigation"></button>
+        <nav id="pages-sidebar">
+        <div>
+        <ul>
+            <li class="sidebar-about">
+                <div class="course-title">
+                    <h1><a href="../.."><span>Computational Data Analysis</span></a></h1>
+                    <h2><span>This course discusses the tools needed for
+taking the first steps in the data analysis journey.</span></h2>
+                </div>
+                <div class="authors">
+                    by <a href="first author homepage link">First author name</a>, <a href="second author homepage link">Second author name</a>
+                </div>
+            </li>
+            <li>
+                <div class="search-bar">
+                    <form action="../../search" method="GET">
+                        <input type="search" name="q" placeholder="Search...">
+                        <input type=submit value="🔎">
+                    </form>
+                </div>
+            </li>
+            <li>
+                <div class="track-chooser">
+                    <label>
+                    <h2>Choose your track:</h2>
+                    <select>
+                        <option value="">Choose...</option>
+                        <option value="julia">💻 Julia programming</option> <option value="material">Material development</option> <option value="setup">Website maintenance</option> 
+                    </select>
+                    </label>
+                </div>
+            </li>
+        <li>
+<h3>Welcome</h3>
+<ul>
+<li class=' lecture tag_welcome'><a href='../../logistics/'><span class="entry-number"></span> Class logistics</a></li><li class=' lecture tag_welcome'><a href='../../installation/'><span class="entry-number"></span> Software installation</a></li><li class=' lecture tag_welcome'><a href='../../cheatsheets/'><span class="entry-number"></span> Cheatsheets</a></li>
+</ul>
+</li>
+<li>
+<h3>Module 1: Website setup</h3>
+<ul>
+<li class=' lecture tag_module1 tag_track_setup tag_teaching tag_repository_structure'><a href='../../mod1_setup_website/getting_started/'><span class="entry-number">1.1</span> Getting started</a></li><li class=' lecture tag_module1 tag_track_setup tag_teaching tag_global_data'><a href='../../mod1_setup_website/basic_info/'><span class="entry-number">1.2</span> Fill course basic information</a></li><li class=' lecture tag_module1 tag_track_setup tag_track_julia tag_PlutoSliderServer tag_pluto'><a href='../../mod1_setup_website/working_locally/'><span class="entry-number">1.3</span> Working locally</a></li>
+</ul>
+</li>
+<li>
+<h3>Module 2: Adding course material</h3>
+<ul>
+<li class='active lecture tag_module2 tag_track_material tag_markdown tag_frontmatter'><a href='../../mod2_add_material/add_markdown/'><span class="entry-number">2.1</span> Add markdown files</a></li><li class=' lecture tag_module2 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../mod2_add_material/add_pluto/'><span class="entry-number">2.2</span> Add Pluto notebooks</a></li><li class=' homework tag_module2 tag_track_julia tag_track_material tag_homeworks tag_pluto tag_PlutoTeachingTools'><a href='../../homework/hw1/' title='sample howework'><span class="entry-number">Homework 1:</span> sample homework</a></li>
+</ul>
+</li>
+<li>
+<h3>Module 3: Publishing your website</h3>
+<ul>
+<li class=' lecture tag_module3 tag_track_setup tag_deploy tag_netlify tag_github_actions tag_github_pages'><a href='../../mod3_publish_website/deploy_static/'><span class="entry-number">3.1</span> Deploy your website as static</a></li><li class=' lecture tag_module3 tag_track_setup tag_deploy tag_server tag_dynamic tag_droplet'><a href='../../mod3_publish_website/setup_server/'><span class="entry-number">3.2</span> Setup a server for your website – OPTIONAL</a></li><li class=' lecture tag_module3 tag_track_setup tag_track_julia tag_deploy tag_precompute tag_Pluto tag_PlutoSliderServer'><a href='../../mod3_publish_website/precompute_output/'><span class="entry-number">3.3</span> Precompute the pluto notebooks – OPTIONAL</a></li>
+</ul>
+</li>
+<li>
+<h3>Data Analysis Notebooks</h3>
+<ul>
+<li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/01-Introduction/'><span class="entry-number">4.0</span> Introduction?</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/00-Julia/'><span class="entry-number">4.1</span> Who is Julia?</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module1/'><span class="entry-number">4.2</span> More about Digital Data</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module2/'><span class="entry-number">4.3</span> Averaging</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module3/'><span class="entry-number">4.4</span> Measures of uniformity</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module4/'><span class="entry-number">4.5</span> Convolution</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module5/'><span class="entry-number">4.6</span> Fourier Transform</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module6/'><span class="entry-number">4.7</span> The Helix Transform</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module7/'><span class="entry-number">4.8</span> The Wavelet Transform</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module8/'><span class="entry-number">4.9</span> Smoothing</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module9/'><span class="entry-number">4.10</span> Bandpass Filtering</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module10/'><span class="entry-number">4.11</span> Forward Interpolation</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module11/'><span class="entry-number">4.12</span> Fundamentals of linear estimation</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module12/'><span class="entry-number">4.13</span> Conjugate Gradients</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module13/'><span class="entry-number">4.14</span> Inverse Interpolation</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module14/'><span class="entry-number">4.15</span> Triangulation</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module15/'><span class="entry-number">4.16</span> Shaping Regularization</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module16/'><span class="entry-number">4.17</span> Sparsity</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module17/'><span class="entry-number">4.18</span> Distance Computations</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module18/'><span class="entry-number">4.19</span> Covariance Estimation</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module19/'><span class="entry-number">4.20</span> Streaming Prediction- Error Filters</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module20/'><span class="entry-number">4.21</span> Using Patterns</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module21/'><span class="entry-number">4.22</span> Local Attributes</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module22/'><span class="entry-number">4.23</span> Local Similarity</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module23/'><span class="entry-number">4.24</span> Regularized Nonstationary Regression</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module24/'><span class="entry-number">4.25</span> Time-Frequency Analysis</a></li><li class=' lecture tag_module4 tag_track_julia tag_track_material tag_Pluto tag_PlutoUI'><a href='../../module4/module25/'><span class="entry-number">4.26</span> Adaptive Regularization</a></li>
+</ul>
+</li>
+
+                <li><hr></li>
+            <li class="sidebar-about">
+                <div class="semester-details">
+                    <a href="../../semesters/">Fall 20XX</a>
+                    <div class="course-numbers"><span>code of your course</span></div>
+                </div>
+                <div class="logos">
+                    <picture title="Your university (or similar) name">
+                        <img src="../../assets/name of your institution logo file, e.g. `logo.svg`. Place this under `assets`">
+                    </picture>
+                    <picture title="Julia Programming Language">
+                        <source srcset="../../assets/julia-logo-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <img src="../../assets/julia-logo-color.svg">
+                    </picture>
+                </div>
+            </li>
+        </ul>
+        </div>
+        </nav>
+        <div id="pages-content">
+           <div class="lecture-header" >
+    <p class="number">Section 2.1</p>
+    <h1>Add markdown files</h1>
+    
+    
+</div>
+        <pluto-editor skip-custom-element class="disable_ui static_preview">
+<main>
+<preamble></preamble>
+<pluto-notebook>
+<pluto-cell>
+<pluto-output class="pages-markdown rich_output">
+<div class="raw-html-wrapper ">
+<div class="markdown">
+<h1 id="markdown-content"><a href="#markdown-content" class="anchor"></a>Markdown content</h1>
+<p>Markdown files are best for pages that do not need to run code or use interactivity. They are a bit faster to process (especially on the first run with an empty cache) and the page loads faster (not Pluto UI needed). This template tries to style Pluto and Markdown pages as similarly as possible, so you can mix and match them as you like.</p>
+<p>As an extra twist, you can evaluate julia code inside a <code>$</code> symbol. For example,</p>
+<pre><code class="language-julia">$(1 + 1)
+</code></pre>
+<p>will become</p>
+<p>2</p>
+<h2 id="add-frontmatter"><a href="#add-frontmatter" class="anchor"></a>Add Frontmatter</h2>
+<p>For each file, markdown or pluto, you will need to add a <em>frontmatter</em>, which specifies the page metadata. For markdown files, the frontmatter is specified at the top of the file between three dashes <code>---</code>. For example, the frontmatter of this file is</p>
+<pre><code>---
+title: &quot;Add markdown file&quot;
+order: 1
+chapter: 2
+section: 1
+layout: &quot;md.jlmd&quot;
+tags: [&quot;module2&quot;, &quot;track_material&quot;, &quot;markdown&quot;, &quot;frontmatter&quot;]
+---
+</code></pre>
+<p>You will need to specify the following attributes</p>
+<ul>
+<li><strong><code>title</code></strong>: title of the page</li>
+<li><strong><code>order</code></strong>: the position of the page in the module on the sidebar. <strong>Hint!</strong>: You can also use fractional numbers, e.g. <code>1.5</code>. This can be handy for homeworks, so you can include the homework between the first and second lesson without messing up lessons counting.</li>
+<li><strong><code>layout</code></strong>: set to <code>&quot;md.jlmd&quot;</code>, unless you are using some custom layout</li>
+<li><strong><code>chapter</code></strong> and <strong><code>section</code></strong> (optional): used to number the page. If for example <code>chapter=1</code> and <code>section=2</code>, the page will be displayed as <code>1.2</code> on the sidebar and page header.</li>
+<li><strong><code>image</code></strong> (optional): link to summarizing image to display in the <code>subjects</code> section on the homepage. If left empty, the page wont be included in the subjects section. If no page has an <code>image</code> field in the frontmatter, the subjects section is not displayed.</li>
+<li><strong><code>description</code></strong> (optional): short description of the notebook</li>
+<li><strong><code>youtube_id</code></strong> (optional): youtube id of the video associated with the page. If included, the page header will embed the youtube video.</li>
+<li><strong><code>homework_number</code></strong>: needed only for homeworks, the number of the homework</li>
+<li><strong><code>tags</code></strong>: list of keywords for the page. It should at least include the module name, as defined in <code>_data/sidebar.jl</code> to include the page in the sidebar. You can also associate pages to a given track by adding the track id, prefixed with <code>track_</code> to the tags. For example, if you want to include the page in the julia track, add <code>track_julia</code> in the tags list.</li>
+</ul>
+<h2 id="markdown-101"><a href="#markdown-101" class="anchor"></a>Markdown 101</h2>
+<p>If you are not familiar with markdown, you can see for example <a href="https://www.markdowntutorial.com/">here</a>. Here is a quick and dirty cheatsheet</p>
+<ol>
+<li>Use <code>#</code> for headers, for example</li>
+</ol>
+<pre><code class="language-markdown"># Header
+## Subheader
+### Sub-sub-header
+</code></pre>
+<ol start="2">
+<li>You can create links with the syntax</li>
+</ol>
+<pre><code class="language-markdown">[text](adddress)
+</code></pre>
+<p>For example the link to the mardown tutorial above was typed as</p>
+<pre><code class="language-markdown">[here](https://www.markdowntutorial.com/)
+</code></pre>
+<ol start="3">
+<li>You can insert pictures with the syntax</li>
+</ol>
+<pre><code class="language-markdown">![optional alternative text](link-to-picture)
+</code></pre>
+<p>for example</p>
+<pre><code>![Julia logo](https://raw.githubusercontent.com/JuliaLang/julia-logo-graphics/master/images/julia-logo-color.png)
+</code></pre>
+<p>will give</p>
+<p><img src="https://raw.githubusercontent.com/JuliaLang/julia-logo-graphics/master/images/julia-logo-color.png" alt="Julia logo" /></p>
+
+</div>
+</div>
+</pluto-output>
+</pluto-cell>
+</pluto-notebook>
+</main>
+</pluto-editor>
+
+        <div class="page-foot">
+            <div class="copyright">
+                <a href="https://github.com/quentingageclark-a11y/research_3/blob/main/src/module4/01-Introduction.jl"><b>Edit this page on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></b></a><br>
+                Website based on the MIT course <a href="https://computationalthinking.mit.edu"><em><b>Computational Thinking</b>, a live online Julia/Pluto textbook</em></a> and built with <a href="https://plutojl.org/">Pluto.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
