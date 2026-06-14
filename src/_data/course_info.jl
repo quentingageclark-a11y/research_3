@@ -3,9 +3,9 @@ Dict(
     "course_subtitle" => "This course discusses the tools needed for
 taking the first steps in the data analysis journey.",
     "code" => "code of your course",
-    "semester" => "Fall 20XX",
+    "semester" => "Fall 2026",
     "authors" => [
-        "First author name" => "first author homepage link",
+        "Sergey Fomel" => "https://www.jsg.utexas.edu/researcher/sergey_fomel/",
         "Second author name" => "second author homepage link"
     ],
     "institution" => "Your university (or similar) name",
